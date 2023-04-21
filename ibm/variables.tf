@@ -1,7 +1,7 @@
 variable "resource_group" {
- type        = string
- description = "A description of my variable"
- default = null
+  type        = string
+  description = "A description of my variable"
+  default     = null
 }
 
 variable "ibmcloud_api_key" {
@@ -11,9 +11,9 @@ variable "ibmcloud_api_key" {
 }
 
 variable "prefix" {
- type        = string
- description = "Prefix added to all resources created in this module"
- default = "static-web-demo"
+  type        = string
+  description = "Prefix added to all resources created in this module"
+  default     = "static-web-demo"
 }
 
 variable "region" {
@@ -21,6 +21,3 @@ variable "region" {
   type        = string
   default     = "eu-gb"
 }
-
-
-

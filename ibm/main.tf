@@ -6,35 +6,35 @@ module "resource_group" {
 }
 
 resource "random_string" "bucket_name_suffix" {
-  length = 4
+  length  = 4
   special = false
-  upper = false
+  upper   = false
 }
 
 module "cos_instance_bucket" {
-  source                              = "git::https://github.com/terraform-ibm-modules/terraform-ibm-cos?ref=v6.2.0"
-  resource_group_id                   = module.resource_group.resource_group_id
-  region                              = var.region
-  cos_instance_name                   = "${var.prefix}-cos"
-  bucket_name                         = "${var.prefix}-web-bucket-${random_string.bucket_name_suffix.id}"
-  encryption_enabled = false
-  retention_enabled = false 
-  create_hmac_key = false
+  source                    = "git::https://github.com/terraform-ibm-modules/terraform-ibm-cos?ref=v6.2.0"
+  resource_group_id         = module.resource_group.resource_group_id
+  region                    = var.region
+  cos_instance_name         = "${var.prefix}-cos"
+  bucket_name               = "${var.prefix}-web-bucket-${random_string.bucket_name_suffix.id}"
+  encryption_enabled        = false
+  retention_enabled         = false
+  create_hmac_key           = false
   object_versioning_enabled = true
 }
 
 locals {
   static_directory = "${path.module}/../static"
-  files = fileset(local.static_directory, "*")
+  files            = fileset(local.static_directory, "*")
 }
 
 resource "ibm_cos_bucket_object" "file" {
-  for_each = local.files
+  for_each        = local.files
   bucket_crn      = module.cos_instance_bucket.bucket_crn[0]
   bucket_location = var.region
   content_file    = "${local.static_directory}/${each.value}"
   key             = each.value
-  etag = filemd5("${local.static_directory}/${each.value}")
+  etag            = filemd5("${local.static_directory}/${each.value}")
 }
 
 # Make the bucket public (anonymous access)
@@ -44,15 +44,15 @@ data "ibm_iam_access_group" "public_access" {
 }
 
 resource "ibm_iam_access_group_policy" "cos_public_access_policy" {
-  access_group_id = data.ibm_iam_access_group.public_access.groups.0.id
+  access_group_id = data.ibm_iam_access_group.public_access.groups[0].id
 
-  roles = [ "Object Reader" ]
+  roles = ["Object Reader"]
 
   resources {
-    service = "cloud-object-storage"
+    service              = "cloud-object-storage"
     resource_instance_id = module.cos_instance_bucket.cos_instance_guid
-    resource_type = "bucket"
-    resource = module.cos_instance_bucket.bucket_name[0]
+    resource_type        = "bucket"
+    resource             = module.cos_instance_bucket.bucket_name[0]
   }
 }
 
@@ -67,6 +67,3 @@ resource "null_resource" "configure_cos_bucket_static_website" {
     }
   }
 }
-
-
-

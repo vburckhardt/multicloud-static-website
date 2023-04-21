@@ -31,4 +31,4 @@ until ibmcloud login -q -r "${REGION}" -g "${RESOURCE_GROUP_ID}" || [ $attempts 
     sleep 5
 done
 
-ibmcloud cos bucket-website-put --bucket ${BUCKET_NAME} --website-configuration file://${CONFIG_LOCATION}
+ibmcloud cos bucket-website-put --bucket "${BUCKET_NAME}" --website-configuration "file://${CONFIG_LOCATION}"
