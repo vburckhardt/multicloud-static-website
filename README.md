@@ -1,4 +1,7 @@
 <!-- Remove the content in this previous H2 heading -->
+
+# Multi-Cloud Static Website Demo
+
 ## Reference architectures
 
 <!--
