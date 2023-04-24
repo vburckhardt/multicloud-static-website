@@ -1,0 +1,123 @@
+{
+    "products": [
+        {
+            "name": "multi-cloud-demo",
+            "label": "Multi Cloud Demo",
+            "product_kind": "solution",
+            "tags": ["network"],
+            "keywords": ["azure", "website", "static", "cos"],
+            "short_description": "",
+            "long_description": "",
+            "offering_docs_url": "",
+            "offering_icon_url": "",
+            "support_details": "This is a demonstration only and no official support is available.",
+            "flavors": [
+                {
+                    "label": "IBM Cloud",
+                    "name": "ibm-cloud-example",
+                    "install_type": "fullstack",
+                    "working_directory": "ibm/.",
+                    "usage_template": "",
+                    "compliance": {
+                        "authority": "scc-v3",
+                        "controls": [
+                        ]
+                    },
+                    "configuration": [
+                        {
+                            "key": "resource_group"
+                        },
+                        {
+                            "key": "ibmcloud_api_key",
+                            "required": true,
+                            "type": "password"
+                        },
+                        {
+                            "key": "prefix",
+                            "required": true,
+                            "type": "string"
+                        },
+                        {
+                            "key": "region",
+                            "required": true,
+                            "type": "string"
+                        }
+                    ],
+                    "iam_permissions": [
+
+                    ],
+                    "architecture": {
+                        "features": [
+                            {
+                                "title": "Cloud Provider",
+                                "description": "IBM"
+                            }
+                        ],
+                        "diagrams": [
+                            {
+                                "diagram": {
+                                    "caption": "",
+                                    "url": ""
+                                },
+                                "description": ""
+                            }
+                        ]
+                    }
+                },
+                {
+                    "label": "Azure",
+                    "name": "azure-cloud-example",
+                    "install_type": "fullstack",
+                    "working_directory": "azure/.",
+                    "usage_template": "",
+                    "compliance": {
+                        "authority": "scc-v3",
+                        "controls": [
+                        ]
+                    },
+                    "configuration": [
+                        {
+                            "key": "client_id"
+                        },
+                        {
+                            "key": "client_secret",
+                            "required": true,
+                            "type": "password"
+                        },
+                        {
+                            "key": "tenant_id",
+                            "required": true
+                        },
+                        {
+                            "key": "subscription_id",
+                            "required": true
+                        },
+                        {
+                            "key": "prefix",
+                            "type": "string"
+                        }
+                    ],
+                    "iam_permissions": [
+                    ],
+                    "architecture": {
+                        "features": [
+                            {
+                                "title": "Cloud Provider",
+                                "description": "AWS"
+                            }
+                        ],
+                        "diagrams": [
+                            {
+                                "diagram": {
+                                    "caption": "",
+                                    "url": ""
+                                },
+                                "description": ""
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
