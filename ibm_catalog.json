@@ -16,7 +16,7 @@
                     "label": "IBM Cloud",
                     "name": "ibm-cloud-example",
                     "install_type": "fullstack",
-                    "working_directory": "ibm/",
+                    "working_directory": "ibm",
                     "configuration": [
                         {
                             "key": "resource_group"
@@ -61,7 +61,7 @@
                     "label": "Azure",
                     "name": "azure-cloud-example",
                     "install_type": "fullstack",
-                    "working_directory": "azure/",
+                    "working_directory": "azure",
                     "configuration": [
                         {
                             "key": "client_id"
