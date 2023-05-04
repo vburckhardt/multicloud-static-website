@@ -1,12 +1,12 @@
 variable "resource_group" {
   type        = string
-  description = "A description of my variable"
+  description = "Name of existing resource group to use.  Leave as null to create one with the given prefix value"
   default     = null
 }
 
 variable "ibmcloud_api_key" {
   type        = string
-  description = "The IBM Cloud API Token"
+  description = "The IBM Cloud API Token from an account with sufficient permissions to deploy resources"
   sensitive   = true
 }
 

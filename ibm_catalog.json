@@ -17,6 +17,21 @@
                     "name": "ibm-cloud-example",
                     "install_type": "fullstack",
                     "working_directory": "ibm",
+                    "usage_template": "module \"ibm-cos-website-demo\" {\n  source           = \"https://cm.globalcatalog.cloud.ibm.com/api/v1-beta/offering/source//${{workingDirectory}}?archive=tgz&catalogID=${{catalogID}}&flavor=${{flavor}}&kind=${{kind}}&name=${{name}}&version=${{version}}\"\n  resource_group   = var.resource_group\n  ibmcloud_api_key = var.ibmcloud_api_key\n  prefix           = var.prefix\n  region           = var.region\n  }",
+                    "compliance": {
+                        "authority": "scc-v3",
+                        "controls": [
+                            {
+                                "profile": {
+                                    "name": "IBM Cloud for Financial Services",
+                                    "version": "1.2.0"
+                                },
+                                "names": [
+                                    "CM-7(a)"
+                                ]
+                            }
+                        ]
+                    },
                     "configuration": [
                         {
                             "key": "resource_group"
@@ -32,18 +47,35 @@
                             "type": "string"
                         },
                         {
+                            "custom_config": {
+                                "config_constraints": {
+                                    "generationType": "2"
+                                },
+                                "grouping": "deployment",
+                                "original_grouping": "deployment",
+                                "type": "vpc_region"
+                            },
                             "key": "region",
-                            "required": true,
-                            "type": "string"
+                            "required": true
                         }
                     ],
                     "iam_permissions": [
+                        {
+                            "role_crns": [
+                                "crn:v1:bluemix:public:iam::::serviceRole:Manager"
+                            ],
+                            "service_name": "cloud-object-storage"
+                        }
                     ],
                     "architecture": {
                         "features": [
                             {
-                                "title": "Cloud Provider",
-                                "description": "IBM"
+                                "description": "IBM",
+                                "title": "Cloud Provider"
+                            },
+                            {
+                                "description": "IBM Cloud Object Storage service",
+                                "title": "Storage"
                             }
                         ],
                         "diagrams": [
@@ -52,7 +84,7 @@
                                     "caption": "IBM Cloud",
                                     "url": "https://raw.githubusercontent.com/vburckhardt/multicloud-static-website/main/images/ibm-arch-diagram.svg"
                                 },
-                                "description": "Place holder description."
+                                "description": "This illustrates the use of the IBM Cloud and the IBM Cloud Object Storage service to host a webiste static web page."
                             }
                         ]
                     }
