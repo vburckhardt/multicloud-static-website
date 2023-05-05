@@ -1,62 +1,6 @@
-<!-- Remove the content in this previous H2 heading -->
-## Reference architectures
+A module creating a Cloud Object Storage instance with a bucket to serve static web content. The content that is served is copied from the [static directory](../static/).
 
-<!--
-Add links to any reference architectures for this module.
-(Usually in the `/reference-architectures` directory.)
-See "Reference architecture" in Authoring Guidelines in the public documentation at
-https://terraform-ibm-modules.github.io/documentation/#/implementation-guidelines?id=reference-architecture
--->
 
-## Usage
-
-<!--
-Add an example of the use of the module in the following code block.
-
-Use real values instead of "var.<var_name>" or other placeholder values
-unless real values don't help users know what to change.
--->
-
-```hcl
-
-```
-
-## Required IAM access policies
-
-<!-- PERMISSIONS REQUIRED TO RUN MODULE
-If this module requires permissions, uncomment the following block and update
-the sample permissions, following the format.
-Replace the sample Account and IBM Cloud service names and roles with the
-information in the console at
-Manage > Access (IAM) > Access groups > Access policies.
--->
-
-<!--
-You need the following permissions to run this module.
-
-- Account Management
-    - **Sample Account Service** service
-        - `Editor` platform access
-        - `Manager` service access
-    - IAM Services
-        - **Sample Cloud Service** service
-            - `Administrator` platform access
--->
-
-<!-- NO PERMISSIONS FOR MODULE
-If no permissions are required for the module, uncomment the following
-statement instead the previous block.
--->
-
-<!-- No permissions are needed to run this module.-->
-<!-- END MODULE HOOK -->
-<!-- BEGIN EXAMPLES HOOK -->
-## Examples
-
-- [ Default example](examples/default)
-- [ Example that uses existing resources](examples/existing-resources)
-- [ Non default example](examples/non-default)
-<!-- END EXAMPLES HOOK -->
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
@@ -89,10 +33,10 @@ statement instead the previous block.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_ibmcloud_api_key"></a> [ibmcloud\_api\_key](#input\_ibmcloud\_api\_key) | The IBM Cloud API Token | `string` | n/a | yes |
+| <a name="input_ibmcloud_api_key"></a> [ibmcloud\_api\_key](#input\_ibmcloud\_api\_key) | The IBM Cloud API Token from an account with sufficient permissions to deploy resources | `string` | n/a | yes |
 | <a name="input_prefix"></a> [prefix](#input\_prefix) | Prefix added to all resources created in this module | `string` | `"static-web-demo"` | no |
 | <a name="input_region"></a> [region](#input\_region) | Region where resources will be created | `string` | `"eu-gb"` | no |
-| <a name="input_resource_group"></a> [resource\_group](#input\_resource\_group) | A description of my variable | `string` | `null` | no |
+| <a name="input_resource_group"></a> [resource\_group](#input\_resource\_group) | Name of existing resource group to use.  Leave as null to create one with the given prefix value | `string` | `null` | no |
 
 ## Outputs
 

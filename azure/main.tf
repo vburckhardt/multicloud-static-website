@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "resource_group" {
   name     = "${var.prefix}-example-resources"
-  location = "West Europe"
+  location = var.location
 }
 
 resource "azurerm_storage_account" "storage_account" {
