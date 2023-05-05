@@ -2,7 +2,7 @@
 
 # Multi-Cloud Static Website
 
-This repository contains 2 terraform modules - one for [IBM Cloud](./ibm/), and one for [Azure](./azure/). Each of these modules preforms conceptually identical tasks:
+This repository contains 3 terraform modules - one for [IBM Cloud](./ibm/), one for [Azure](./azure/), one for [AWS](./aws/). Each of these modules preforms conceptually identical tasks:
 - Create a storage instance
 - Create a storage container
 - Configure the storage container to serve static web content
