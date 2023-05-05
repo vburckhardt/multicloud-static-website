@@ -20,9 +20,6 @@ resource "azurerm_storage_account" "storage_account" {
   #checkov:skip=CKV_AZURE_59: Public access needed for static website
   #checkov:skip=CKV_AZURE_190: Public access needed for static website
 
-  #public_network_access_enabled = false
-
-
   static_website {
     index_document     = "index.html"
     error_404_document = "error.html"
