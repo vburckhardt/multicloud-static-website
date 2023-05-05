@@ -7,7 +7,6 @@ A module creating a Cloud Object Storage instance with a bucket to serve static 
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0.0 |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3 |
 | <a name="requirement_ibm"></a> [ibm](#requirement\_ibm) | 1.51.0 |
 | <a name="requirement_null"></a> [null](#requirement\_null) | 3.2.1 |
