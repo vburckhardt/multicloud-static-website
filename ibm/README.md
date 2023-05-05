@@ -1,5 +1,6 @@
-A module creating a Cloud Object Storage instance with a bucket to serve static web content. The content that is served is copied from the [static directory](../static/).
+# IBM Cloud Static Website
 
+A module creating a Cloud Object Storage instance with a bucket to serve static web content. The content that is served is copied from the [static directory](../static/).
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
