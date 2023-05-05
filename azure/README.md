@@ -29,7 +29,7 @@ No modules.
 | <a name="input_client_id"></a> [client\_id](#input\_client\_id) | The Client ID which should be used. Refer to https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/service_principal_client_secret | `string` | n/a | yes |
 | <a name="input_client_secret"></a> [client\_secret](#input\_client\_secret) | The Client Secret which should be used. Refer to https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/service_principal_client_secret | `string` | n/a | yes |
 | <a name="input_location"></a> [location](#input\_location) | Specifies the supported Azure location where the resources are provisioned. | `string` | `"West Europe"` | no |
-| <a name="input_prefix"></a> [prefix](#input\_prefix) | Prefix added to all resources created in this module | `string` | `"demoweb"` | no |
+| <a name="input_prefix"></a> [prefix](#input\_prefix) | Prefix added to all resources created in this module | `string` | `"staticwebdemo"` | no |
 | <a name="input_subscription_id"></a> [subscription\_id](#input\_subscription\_id) | The Subscription ID which should be used. Refer to https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/service_principal_client_secret | `string` | n/a | yes |
 | <a name="input_tenant_id"></a> [tenant\_id](#input\_tenant\_id) | The Tenant ID which should be used. Refer to https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/service_principal_client_secret | `string` | n/a | yes |
 

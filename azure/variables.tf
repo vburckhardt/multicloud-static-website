@@ -22,7 +22,7 @@ variable "subscription_id" {
 variable "prefix" {
   type        = string
   description = "Prefix added to all resources created in this module"
-  default     = "demoweb"
+  default     = "staticwebdemo"
 }
 
 variable "location" {
