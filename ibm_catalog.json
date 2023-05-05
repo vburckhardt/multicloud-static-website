@@ -135,6 +135,48 @@
                             }
                         ]
                     }
+                },
+                {
+                    "label": "AWS",
+                    "name": "aws-cloud-example",
+                    "install_type": "fullstack",
+                    "working_directory": "aws",
+                    "configuration": [
+                        {
+                            "key": "access_key"
+                        },
+                        {
+                            "key": "secret_key",
+                            "required": true,
+                            "type": "password"
+                        },
+                        {
+                            "key": "region"
+                        },
+                        {
+                            "key": "prefix",
+                            "type": "string"
+                        }
+                    ],
+                    "iam_permissions": [
+                    ],
+                    "architecture": {
+                        "features": [
+                            {
+                                "title": "Cloud Provider",
+                                "description": "AWS"
+                            }
+                        ],
+                        "diagrams": [
+                            {
+                                "diagram": {
+                                    "caption": "AWS Cloud",
+                                    "url": "https://raw.githubusercontent.com/vburckhardt/multicloud-static-website/main/images/azure-arch-diagram.svg"
+                                },
+                                "description": "Place holder description."
+                            }
+                        ]
+                    }
                 }
             ]
         }
