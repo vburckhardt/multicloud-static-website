@@ -1,9 +1,3 @@
-# variable "resource_group" {
-#   type        = string
-#   description = "Name of existing resource group to use.  Leave as null to create one with the given prefix value"
-#   default     = null
-# }
-
 variable "access_key" {
   type        = string
   description = "The access key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console."
