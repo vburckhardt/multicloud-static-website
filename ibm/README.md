@@ -2,6 +2,8 @@
 
 A module creating a Cloud Object Storage instance with a bucket to serve static web content. The content that is served is copied from the [static directory](../static/).
 
+![Architecture Diagram](../images/ibm-arch-diagram.svg)
+
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
