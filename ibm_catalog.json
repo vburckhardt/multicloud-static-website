@@ -171,7 +171,7 @@
                             {
                                 "diagram": {
                                     "caption": "AWS Cloud",
-                                    "url": "https://raw.githubusercontent.com/vburckhardt/multicloud-static-website/main/images/azure-arch-diagram.svg"
+                                    "url": "https://raw.githubusercontent.com/vburckhardt/multicloud-static-website/main/images/aws-arch-diagram.svg"
                                 },
                                 "description": "Place holder description."
                             }
