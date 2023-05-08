@@ -2,6 +2,8 @@
 
 A module creating an Azure storage instance, configured to serve static web content. The content that is served is copied from the [static directory](../static/).
 
+![Architecture Diagram](../images/azure-arch-diagram.svg)
+
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
