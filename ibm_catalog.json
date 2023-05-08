@@ -74,7 +74,7 @@
                                 "title": "Cloud Provider"
                             },
                             {
-                                "description": "IBM Cloud Object Storage service",
+                                "description": "IBM Cloud Object Storage",
                                 "title": "Storage"
                             }
                         ],
@@ -123,6 +123,10 @@
                             {
                                 "title": "Cloud Provider",
                                 "description": "Azure"
+                            },
+                            {
+                                "description": "Azure Blob Storage",
+                                "title": "Storage"
                             }
                         ],
                         "diagrams": [
@@ -165,6 +169,10 @@
                             {
                                 "title": "Cloud Provider",
                                 "description": "AWS"
+                            },
+                            {
+                                "description": "Amazon Simple Storage Service (S3)",
+                                "title": "Storage"
                             }
                         ],
                         "diagrams": [
