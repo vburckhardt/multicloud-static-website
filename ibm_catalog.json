@@ -2,15 +2,15 @@
     "products": [
         {
             "name": "multi-cloud-demo",
-            "label": "Multi Cloud Demo",
+            "label": "Web application for multicloud",
             "product_kind": "solution",
             "tags": ["network"],
-            "keywords": ["azure", "website", "static", "cos"],
-            "short_description": "This is a demonstration of similar terraform templates using different cloud providers.",
-            "long_description": "This example is designed to illustrate how similar terraform templates work across two differnt cloud platforms.",
+            "keywords": ["azure", "aws", "ibmcloud", "website", "static", "cos"],
+            "short_description": "This basic web application can be deployed on IBM Cloud, AWS, or Azure.",
+            "long_description": "This basic web application example is designed to illustrate how similar terraform templates work across different cloud platforms and can be managed through an IBM Cloud project regardless of the platform that the app was deployed on.",
             "offering_docs_url": "https://raw.githubusercontent.com/vburckhardt/multicloud-static-website/main/README.md",
             "offering_icon_url": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gU3ZnIFZlY3RvciBJY29ucyA6IGh0dHA6Ly93d3cub25saW5ld2ViZm9udHMuY29tL2ljb24gLS0+DQo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwMCAxMDAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMDAwIDEwMDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPG1ldGFkYXRhPiBTdmcgVmVjdG9yIEljb25zIDogaHR0cDovL3d3dy5vbmxpbmV3ZWJmb250cy5jb20vaWNvbiA8L21ldGFkYXRhPg0KPGc+PHBhdGggZD0iTTQyMSwzNzYuOGMtNi4yLTE4LjUtMTIuMy0zMC44LTE4LjUtNDkuM2wzMC44LTEyLjNjNi4yLDE4LjUsMTIuMywzMC44LDE4LjUsNDMuMWM2LjIsMCw2LjIsMCwxMi4zLDBjMzcsMCw2MS42LDMwLjgsNjEuNiw2MS42djYuMmM0OS4zLDE4LjUsOTguNSwzNywxNDcuOCw0OS4zYzYuMiwwLDEyLjMsMCwxMi4zLDYuMmMxMi4zLTI0LjYsMzctNDMuMSw2Ny43LTQzLjFjMCwwLDAsMCw2LjIsMGM2LjItMzAuOCwxMi4zLTU1LjQsMTguNS04MGMtNi4yLDAtMTIuMywwLTEyLjMsMGMtMTIuMywwLTE4LjUsMC0zMC44LDBjMC02LjItNDkuMy0xODQuNy0yNDAuMi0xODQuN2MtMTIuMywwLTMwLjgsMC00My4xLDBjLTk4LjUsMTguNS0xNTMuOSw2MS42LTE3OC42LDEwNC43QzMyMi40LDMxNS4zLDM3MS43LDM1Mi4yLDQyMSwzNzYuOEw0MjEsMzc2LjhMNDIxLDM3Ni44eiBNMzY1LjUsMjIyLjlsMzAuOC02LjJjNi4yLDE4LjUsMTIuMywzMC44LDE4LjUsNDkuM0wzODQsMjc4LjNDMzc3LjgsMjU5LjgsMzcxLjcsMjQxLjMsMzY1LjUsMjIyLjlMMzY1LjUsMjIyLjl6IE02MDUuNyw3MDkuM2MwLTMwLjgsMjQuNi00OS4zLDQ5LjMtNDkuM2M2LjIsMCw2LjIsMCwxMi4zLDBjMTguNS0zMC44LDMwLjgtNTUuNCw0My4xLTg2LjJjLTE4LjUtMTIuMy0zMC44LTM3LTMwLjgtNjEuNmMtNi4yLDAtMTIuMywwLTE4LjUtNi4yYy00OS4zLTEyLjMtOTguNS0zMC44LTE1My45LTQ5LjNjLTYuMiwxOC41LTI0LjYsMjQuNi00My4xLDI0LjZjLTM3LDAtNjEuNi0zMC44LTYxLjYtNjEuNmMwLTYuMiwwLTEyLjMsMC0xMi4zYy00OS4zLTMwLjgtOTIuMy02MS42LTE0MS42LTk4LjVjLTE4LjUsNTUuNC0xMi4zLDk4LjUtMTIuMywxMDQuN2MwLDAtMjAzLjIsMTIuMy0yMzQsMTYwLjFjLTM3LDE4NC43LDE2MC4xLDI1Mi41LDIyNy44LDI1Mi41SDUzOGMzMC44LTI0LjYsNTUuNC01NS40LDczLjktODYuMkM2MTEuOSw3MzQsNjA1LjcsNzIxLjcsNjA1LjcsNzA5LjNMNjA1LjcsNzA5LjN6IE01MzEuOCw1NjcuN2MtMTIuMy0xMi4zLTI0LjYtMzAuOC0zMC44LTQzLjFsMjQuNi0xOC41YzYuMiwxMi4zLDE4LjUsMzAuOCwzMC44LDQzLjFMNTMxLjgsNTY3Ljd6IE01NjIuNiw2MTAuOGwyNC42LTE4LjVjMTIuMywxMi4zLDE4LjUsMzAuOCwzMC44LDQzLjFsLTI0LjYsMTguNUM1ODEsNjQxLjYsNTY4LjcsNjI5LjMsNTYyLjYsNjEwLjh6IE05ODcuNSw1NTUuNGMtNDMuMSwwLTEwNC43LTYuMi0xNjYuMy0xMi4zYy0xMi4zLDI0LjYtMzcsNDMuMS02Ny43LDQzLjFoLTYuMmMtMTIuMywzMC44LTMwLjgsNjEuNi00My4xLDkyLjNjNi4yLDYuMiwxMi4zLDE4LjUsMTIuMywzMC44YzAsMzAuOC0yNC42LDQ5LjMtNDkuMyw0OS4zYy02LjIsMC0xMi4zLDAtMTIuMywwYy0xOC41LDI0LjYtMzcsNDMuMS01NS40LDY3LjdoMTQ3LjhjNi4yLDAsMTYwLjEsMCwyMzQtMTQxLjZDOTg3LjUsNjQxLjYsOTkzLjYsNTk4LjUsOTg3LjUsNTU1LjRMOTg3LjUsNTU1LjR6IE03MzUsODIwLjJjLTEyLjMtMTIuMy0yNC42LTI0LjYtMzctMzdsMjQuNi0yNC42YzEyLjMsMTIuMywyNC42LDI0LjYsMzcsMzdMNzM1LDgyMC4yeiBNODI3LjMsNTEyLjNjNjEuNiw2LjIsMTEwLjgsMTIuMywxNTMuOSwxMi4zYy0xOC41LTgwLTgwLTE0MS42LTE3Mi40LTE2MC4xYy02LjIsMjQuNi0xMi4zLDU1LjQtMTguNSw4Ni4yQzgwOC45LDQ2Myw4MjEuMiw0ODEuNSw4MjcuMyw1MTIuM0w4MjcuMyw1MTIuM3oiLz48L2c+DQo8L3N2Zz4=",
-            "support_details": "This is a demonstration only and no official support is available.",
+            "support_details": "This is a sample deployable architecture and no official support is available.",
             "flavors": [
                 {
                     "label": "IBM Cloud",
@@ -76,6 +76,10 @@
                             {
                                 "description": "IBM Cloud Object Storage",
                                 "title": "Storage"
+                            },
+                            {
+                                "description": "static",
+                                "title": "Website"
                             }
                         ],
                         "diagrams": [
@@ -84,7 +88,7 @@
                                     "caption": "IBM Cloud",
                                     "url": "https://raw.githubusercontent.com/vburckhardt/multicloud-static-website/main/images/ibm-arch-diagram.svg"
                                 },
-                                "description": "This illustrates the use of the IBM Cloud and the IBM Cloud Object Storage service to host a webiste static web page."
+                                "description": "This architecture includes the use of the IBM Cloud Object Storage service and a static website hosted on IBM Cloud."
                             }
                         ]
                     }
@@ -127,6 +131,10 @@
                             {
                                 "description": "Azure Blob Storage",
                                 "title": "Storage"
+                            },
+                            {
+                                "description": "static",
+                                "title": "Website"
                             }
                         ],
                         "diagrams": [
@@ -135,7 +143,7 @@
                                     "caption": "Azure Cloud",
                                     "url": "https://raw.githubusercontent.com/vburckhardt/multicloud-static-website/main/images/azure-arch-diagram.svg"
                                 },
-                                "description": "Place holder description."
+                                "description": "This architecture includes the use of the Azure Blob Storage service and a static website hosted on Azure."
                             }
                         ]
                     }
@@ -171,8 +179,12 @@
                                 "description": "AWS"
                             },
                             {
-                                "description": "Amazon Simple Storage Service (S3)",
+                                "description": "Amazon S3",
                                 "title": "Storage"
+                            },
+                            {
+                                "description": "static",
+                                "title": "Website"
                             }
                         ],
                         "diagrams": [
@@ -181,7 +193,7 @@
                                     "caption": "AWS Cloud",
                                     "url": "https://raw.githubusercontent.com/vburckhardt/multicloud-static-website/main/images/aws-arch-diagram.svg"
                                 },
-                                "description": "Place holder description."
+                                "description": "This architecture includes the use of the Amazon Simple Storage Service (Amazon S3) and a static website hosted on AWS."
                             }
                         ]
                     }
