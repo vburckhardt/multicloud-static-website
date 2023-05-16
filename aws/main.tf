@@ -63,6 +63,6 @@ module "object" {
   key    = each.value
 
   file_source  = "${local.static_directory}/${each.value}"
-  content_type = "text/html"
+  content_type = endswith("${each.value}", "svg") ? "image/svg+xml" : "text/html"
   source_hash  = filemd5("${local.static_directory}/${each.value}")
 }
