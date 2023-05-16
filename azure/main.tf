@@ -39,7 +39,7 @@ resource "azurerm_storage_blob" "file" {
   name                   = each.value
   storage_account_name   = azurerm_storage_account.storage_account.name
   storage_container_name = "$web"
-  content_type           = "text/html"
+  content_type           = endswith("${each.value}", "svg") ? "image/svg" : "text/html"
   type                   = "Block"
   source                 = "${local.static_directory}/${each.value}"
   content_md5            = filemd5("${local.static_directory}/${each.value}")
