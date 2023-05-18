@@ -20,7 +20,8 @@ module "cos_instance_bucket" {
   encryption_enabled        = false
   retention_enabled         = false
   create_hmac_key           = false
-  object_versioning_enabled = true
+  object_versioning_enabled = false
+  archive_days              = 0
 }
 
 locals {
