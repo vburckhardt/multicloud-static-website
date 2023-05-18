@@ -21,6 +21,8 @@ module "cos_instance_bucket" {
   retention_enabled         = false
   create_hmac_key           = false
   object_versioning_enabled = false
+  archive_days              = null
+  expire_days               = null
 }
 
 locals {
